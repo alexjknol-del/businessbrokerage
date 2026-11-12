@@ -56,6 +56,12 @@ def home():
 <h2>Where transactions are published</h2>
 <p>Listings of European online businesses offered for sale, and the buyers currently searching, are published on {plink("the marketplace operated by Businessforsale.eu", "/online-business-for-sale")}.</p>
 </div>
+<h2>Related resources</h2>
+<dl class="defs">
+<dt><a href="https://www.vanderzwaard.nl/" rel="noopener">vanderzwaard.nl</a></dt><dd>Accounting firm in The Hague, the Netherlands.</dd>
+<dt><a href="https://dlsa.nl/" rel="noopener">Letsel advocaat</a></dt><dd>Dutch personal injury lawyers.</dd>
+<dt><a href="https://advocaat-vanwegen.nl" rel="noopener">Advocaat van Wegen</a></dt><dd>Law firm in The Hague with a practice in employment law.</dd>
+</dl>
 """
     page("/", "Business brokerage in Europe: a working reference",
          "A reference on brokering online businesses in Europe: mandates, preparation, valuation methods, negotiation, due diligence and transfer, in twelve chapters.",
