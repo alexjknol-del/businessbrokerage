@@ -5,7 +5,7 @@ import os, re, sys, html
 DIST = os.path.join(os.path.dirname(os.path.abspath(__file__)), "dist")
 SITE = "https://businessbrokerage.eu"
 MAIL = "info@businessbrokerage.eu"
-ALLOWED = ("https://www.businessforsale.eu", SITE, "https://www.vanderzwaard.nl/", "https://dlsa.nl/", "https://advocaat-vanwegen.nl")
+ALLOWED = ("https://www.ibba.org", "https://single-market-economy.ec.europa.eu", "https://www.businessforsale.eu", SITE, "https://www.vanderzwaard.nl/", "https://dlsa.nl/", "https://advocaat-vanwegen.nl")
 
 ADDRESS = r"\b(you|your|yours|we|our|ours|us)\b"
 MONEY = r"(€|\$|£|EUR\s?\d|\d+\s?(euro|euros)\b)"

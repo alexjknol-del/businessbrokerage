@@ -176,6 +176,7 @@ def page(path, title, meta, body, prio="0.6", rail=None, breadcrumb=None):
 </ul></div>
 <div><h4>This site</h4><ul>
 <li><a href="/about/">About</a></li>
+<li><a href="/partners/">Partners</a></li>
 <li><a href="/contact/">Contact</a></li>
 <li><a href="/privacy/">Privacy statement</a></li>
 <li><a href="/cookies/">Cookie statement</a></li>

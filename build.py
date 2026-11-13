@@ -264,12 +264,24 @@ def notfound(dist):
     open(os.path.join(dist, "404.html"), "w", encoding="utf-8").write(html)
 
 
+def partners():
+    body = """
+<h1>Partners</h1>
+<p class="stand">Business Brokerage links to a small number of independent external resources.</p>
+<h2>IBBA</h2>
+<p>IBBA is the International Business Brokers Association, the professional body for business brokers. <a href="https://www.ibba.org" target="_blank" rel="noopener">IBBA</a></p>
+<h2>European Commission SME portal</h2>
+<p>The European Commission SME portal covers rules, funding and business transfer across the single market. <a href="https://single-market-economy.ec.europa.eu/smes_en" target="_blank" rel="noopener">European Commission SME portal</a></p>
+"""
+    page("/partners/", 'Partners | Business Brokerage', 'External resources on business brokerage and the European SME context that Business Brokerage links to.', body, "0.4")
+
+
 def main():
     dist = os.path.join(os.path.dirname(os.path.abspath(__file__)), "dist")
     if os.path.isdir(dist):
         shutil.rmtree(dist)
     os.makedirs(dist)
-    home(); handbook(); methods(); markets(); glossary(); statics()
+    home(); handbook(); methods(); markets(); glossary(); statics(); partners()
     core.write(dist)
     notfound(dist)
     open(os.path.join(dist, "favicon.svg"), "w", encoding="utf-8").write(FAVICON)
